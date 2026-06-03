@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  background: #2563eb;
+
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #2563eb;
+}
+
+.active-link {
+  color: #2563eb !important;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.notification-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-icon {
+  font-size: 22px;
+  color: #444;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  background: red;
+  color: white;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 32px;
+  color: #444;
+}
+
+.profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
